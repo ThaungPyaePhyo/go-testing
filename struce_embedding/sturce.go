@@ -24,12 +24,32 @@ import "fmt"
 // 		fmt.Println("Quotient:", quotient)
 // 	}
 // }
-func main() {
-	var arr [5]int
-	arr[0] = 1
-	arr[1] = 2
-	fmt.Println(arr)
+
+//array
+// func main() {
+// 	var arr [5]int
+// 	arr[0] = 1
+// 	arr[1] = 2
+// 	fmt.Println(arr)
 	 
-	numbers :=  [3] int{1,2,3}
-	fmt.Println(numbers)
+// 	numbers :=  [3] int{1,2,3}
+// 	fmt.Println(numbers)
+// }
+
+//slice
+
+func main() {
+	var slice []int
+	slice = append(slice,1,2,3,4)
+	fmt.Println(slice)
+
+	a := []int{1,2,3,4,5}
+	fmt.Println(a)
+
+	s := make([]int,5)
+	s = append(1,2,3)
+	fmt.Println(s)
+
+	fruit := []string{"apple","orange","banana"}
+	fmt.Println(fruit)
 }
